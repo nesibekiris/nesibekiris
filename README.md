@@ -1,4 +1,4 @@
-# TechLetter Next.js Website
+# nesibekiris Next.js Website
 
 ## 1. 🏗 Project Setup
 - Install Node.js v18+, npm (or yarn), and Git.
