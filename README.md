@@ -1,33 +1,27 @@
-# TechLetter Website Guide
+# TechLetter Next.js Website
 
-This README walks you through setting up, customizing, and deploying the TechLetter-inspired Next.js + Tailwind CSS + MDX website.
-
-## 🏗 Project Setup
-
-### Prerequisites
-- Node.js (v18 or newer)
-- npm or yarn
-- Git
-
-### Clone & Install
+## 1. 🏗 Project Setup
+- Install Node.js v18+, npm (or yarn), and Git.
+- Clone the repository and install dependencies.
 ```bash
 git clone https://github.com/<username>/<repo>.git
 cd <repo>
 npm install
 npm run dev
 ```
+- Open http://localhost:3000 in your browser to view the site.
 
-Visit the local development server at [http://localhost:3000](http://localhost:3000).
+---
 
-## 🧱 Project Structure
-- `/app`: All page routes (Home, About, Services, Insights, Contact).
-- `/components`: Reusable UI elements like `Navbar`, `Footer`, `Layout`, `ServiceCard`, and more.
-- `/content/posts`: MDX blog posts and TechLetter essays.
-- `/styles`: Global styles and Tailwind configuration.
-- `/utils`: Metadata, constants, and SEO configuration helpers.
-- `/public`: Images, favicons, and other static assets.
+## 2. 🧱 Folder Structure
+- `/app` – App Router pages (Home, About, Services, Insights, Contact).
+- `/components` – Shared UI components such as Navbar, Footer, Layout, ServiceCard.
+- `/content/posts` – MDX blog posts and essays rendered on Insights.
+- `/styles` – Global styles and Tailwind configuration files.
+- `/utils` – Metadata, constants, and SEO helpers (includes next-themes setup).
+- `/public` – Static assets, images, favicons, and CNAME file.
 
-### Sample MDX Post
+**Sample MDX file**
 ```mdx
 ---
 title: "AI Governance in Context"
@@ -39,64 +33,76 @@ tags: ["AI Policy", "Ethics"]
 Writing in MDX allows you to blend Markdown with React components.
 ```
 
-## 🎨 Styling and Design
-- Tailwind CSS handles styling; adjust global variables in `/styles/globals.css`.
-- Update `tailwind.config.js` colors to match the TechLetter pastel palette.
-- Fonts (Inter and Space Grotesk) are imported via Google Fonts for a calm, thoughtful tone.
+---
 
-## 🧩 Adding or Editing Content
-- To add a new article, create a `.mdx` file in `/content/posts/` and include frontmatter (`title`, `date`, `summary`, `tags`).
-- Restart the development server after adding new files.
-- Blog cards are generated dynamically from the files in `/content/posts`.
-- Update services or about page content in `/app/services/page.tsx` or `/app/about/page.tsx` respectively.
+## 3. 🎨 Styling and Design
+- Tailwind CSS provides utility-first styling across the project.
+- Adjust pastel color tokens in `tailwind.config.js` to reflect TechLetter.co branding.
+- Update global rules, dark/light mode styles, and variables in `/styles/globals.css`.
+- Fonts Inter and Space Grotesk are loaded via Google Fonts for calm editorial typography.
 
-## 🌍 Deploying to GitHub Pages
-Add these scripts to your `package.json`:
+---
 
+## 4. 🧩 Adding Content
+- Add a blog post by creating `/content/posts/new-article.mdx` with frontmatter (title, date, summary, tags).
+- Restart the dev server after adding files:
+```bash
+npm run dev
+```
+- Update About or Services copy in `/app/about/page.tsx` and `/app/services/page.tsx` respectively.
+- Framer Motion animations and next-themes dark/light mode adapt automatically to new content.
+
+---
+
+## 5. 🌍 Deployment to GitHub Pages
+- Insert deployment scripts into `package.json`.
 ```json
 "scripts": {
   "build": "next build && next export",
   "deploy": "gh-pages -d out"
 }
 ```
-
-Then run:
+- Export and publish the static site.
 ```bash
 npm run build
 npm run deploy
 ```
+- In GitHub → Settings → Pages, choose the `gh-pages` branch as the source.
 
-This exports static HTML files into `/out` and publishes them to the `gh-pages` branch. Ensure your repository is public, then in GitHub **Settings → Pages** select the `gh-pages` branch as the source.
+---
 
-## 🌐 Connecting Your Custom Domain
-1. Create `/public/CNAME` containing your domain:
-   ```
-   nesibekiris.com
-   ```
-2. Configure DNS records with your registrar (e.g., Namecheap, Google Domains):
+## 6. 🌐 Custom Domain Setup
+- Create `/public/CNAME` containing `nesibekiris.com`.
+- Configure DNS records with your registrar:
 
-   | Type | Name | Value |
-   | ---- | ---- | ----- |
-   | A    | @    | 185.199.108.153 |
-   | A    | @    | 185.199.109.153 |
-   | A    | @    | 185.199.110.153 |
-   | A    | @    | 185.199.111.153 |
-   | CNAME | www | `<username>.github.io` |
+| Type | Name | Value |
+| ---- | ---- | ----- |
+| A | @ | 185.199.108.153 |
+| A | @ | 185.199.109.153 |
+| A | @ | 185.199.110.153 |
+| A | @ | 185.199.111.153 |
+| CNAME | www | `<username>.github.io` |
 
-## 📈 SEO & Analytics
-- Configure site metadata in `/utils/seo.config.ts`.
-- Optionally add your Google Analytics tag in `_app.tsx` or `head.tsx`.
+---
 
-## 💾 Maintenance
-- Update content by editing or adding MDX files.
-- Push updates with:
-  ```bash
-  git add .
-  git commit -m "update content"
-  git push origin main
-  npm run build && npm run deploy
-  ```
-- Keep dependencies fresh with `npm update`.
+## 7. 📈 SEO & Analytics
+- Edit site metadata, open graph tags, and canonical values in `/utils/seo.config.ts`.
+- Optionally add a Google Analytics snippet to the shared layout (`app/layout.tsx`) or tracking component.
 
-## 🧠 Credits
-Built with Next.js, Tailwind CSS, Framer Motion, and MDX. Designed for a TechLetter-inspired tone—calm, pastel, and thoughtful.
+---
+
+## 8. 💾 Maintenance
+- Update MDX content or page copy, then commit and redeploy.
+```bash
+git add .
+git commit -m "update content"
+git push origin main
+npm run build && npm run deploy
+```
+- Run `npm update` periodically to refresh dependencies.
+
+---
+
+## 9. 🧠 Credits
+- Built with Next.js (App Router), TypeScript, Tailwind CSS, MDX, Framer Motion, and next-themes.
+- Design language inspired by the calm, pastel aesthetic of TechLetter.co.
