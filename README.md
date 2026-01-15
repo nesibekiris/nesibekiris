@@ -1,5 +1,8 @@
 # nesibekiris Next.js Website
 
+## Architecture Diagrams & AWS Mapping
+- See `ARCHITECTURE.md` for detailed architecture diagrams and local-to-AWS mappings.
+
 ## 1. 🏗 Project Setup
 - Install Node.js v18+, npm (or yarn), and Git.
 - Clone the repository and install dependencies.
