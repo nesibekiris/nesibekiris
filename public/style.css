@@ -396,3 +396,19 @@ body.compact-home .quick-offers .service-choice p{font-size:16px;line-height:1.7
 body.compact-home .quick-offers .session-format{font-size:13px;line-height:1.5;padding-top:8px;margin-top:auto}
 body.compact-home .quick-offers .text-link{font-size:14px;line-height:1.5;margin-top:16px;padding-bottom:5px}
 @media(max-width:650px){body.compact-home .personal-service-grid.quick-offers{gap:16px}body.compact-home .quick-offers .service-choice{padding:22px}body.compact-home .quick-offers .service-choice h3{font-size:22px}}
+
+/* Footer links grouped by visitor intent. */
+body>footer.organised-footer{display:grid;grid-template-columns:minmax(220px,.9fr) minmax(0,1.7fr);gap:34px 48px;align-items:start;padding-top:36px;padding-bottom:24px}
+body>footer .footer-navigation.footer-grouped{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:28px;align-items:start}
+body>footer .footer-link-group{min-width:0}
+body>footer .footer-link-group h3{font-size:12px;line-height:1.5;text-transform:uppercase;letter-spacing:1px;color:#52617c;margin:0 0 14px;font-weight:600}
+body>footer .footer-grouped .footer-links{display:flex;flex-direction:column;gap:11px;align-items:flex-start}
+body>footer .footer-grouped .footer-links a{font-size:14px;line-height:1.5;padding:0;margin:0}
+body>footer .footer-person>.footer-newsletter{display:inline-block;margin-top:18px;padding:8px 13px;border:1px solid #5368b24d;border-radius:8px;color:var(--blue);font-size:13px;line-height:1.5;background:#edf1fa}
+body>footer .copyright{grid-column:1/-1;display:flex;flex-wrap:wrap;align-items:center;gap:12px 24px;border-top:1px solid #22314925;padding-top:18px;margin-top:0;font-size:12px}
+body>footer .footer-policies{display:flex;gap:16px;order:2;margin-left:auto}
+body>footer .footer-language{order:3}
+@media(max-width:900px){body>footer.organised-footer{grid-template-columns:1fr;gap:28px}body>footer .footer-navigation.footer-grouped{gap:20px}}
+@media(max-width:520px){body>footer .footer-navigation.footer-grouped{grid-template-columns:repeat(2,minmax(0,1fr));gap:24px 18px}body>footer .footer-policies{margin-left:0}body>footer .copyright{gap:12px 18px}}
+
+body>footer .footer-person>.footer-corporate{display:block;margin-top:10px;font-size:13px}
