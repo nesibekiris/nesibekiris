@@ -345,3 +345,12 @@ body.techletter-page .techletter-reports .content-card h3{overflow-wrap:anywhere
 body>header nav a[href="/contact.html"],body>header nav a[href="/en/contact.html"]{display:inline-flex;align-items:center;justify-content:center;padding:9px 16px;border-radius:24px;background:var(--blue);color:#fff;border:1px solid #5266a9;box-shadow:0 3px 0 #324573;line-height:1.4;font-weight:500;white-space:nowrap;transition:transform .2s,box-shadow .2s}
 body>header nav a[href="/contact.html"]:hover,body>header nav a[href="/en/contact.html"]:hover{color:#fff;transform:translateY(-2px);box-shadow:0 5px 0 #324573}
 body>header nav a[href="/contact.html"]:active,body>header nav a[href="/en/contact.html"]:active{transform:translateY(1px);box-shadow:0 1px 0 #324573}
+
+/* Shorter, evenly aligned homepage experience cards. */
+.compact-home .background-three{align-items:stretch;gap:14px}
+.compact-home .background-three>.background-panel{padding:17px 18px;height:100%;box-sizing:border-box;align-self:stretch}
+.compact-home .background-panel h3{margin:6px 0 10px}
+.compact-home .background-panel li{padding:5px 0;line-height:1.4}
+.compact-home .background-panel .institution-company-chips>span{padding:3px 5px}
+.compact-home .background-panel .fellowship-report-boxes>a{padding:7px 9px}
+.compact-home .background-panel .fellowship-report-boxes strong{font-size:12px;line-height:1.35}
