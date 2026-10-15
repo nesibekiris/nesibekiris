@@ -354,3 +354,11 @@ body>header nav a[href="/contact.html"]:active,body>header nav a[href="/en/conta
 .compact-home .background-panel .institution-company-chips>span{padding:3px 5px}
 .compact-home .background-panel .fellowship-report-boxes>a{padding:7px 9px}
 .compact-home .background-panel .fellowship-report-boxes strong{font-size:12px;line-height:1.35}
+
+/* Concise homepage offers with less vertical space. */
+.compact-home .quick-offers .service-choice{padding:17px 20px}
+.compact-home .quick-offers .card-top .living-icon{width:28px;height:28px}
+.compact-home .quick-offers .service-choice h3{font-size:23px;line-height:1.2;margin:10px 0 8px}
+.compact-home .quick-offers .service-choice p{font-size:15px;line-height:1.55;margin:0 0 10px}
+.compact-home .quick-offers .session-format{font-size:12px;padding-top:4px;line-height:1.45}
+.compact-home .quick-offers .text-link{font-size:14px;margin-top:8px;padding-bottom:3px}
