@@ -270,3 +270,16 @@ body.techletter-page #partnerships .intro{font-size:16px;line-height:1.65}
 .partner-logo-dark{background:#1e2a45}
 .partner-logo img{display:block;width:100%;height:100%;object-fit:contain}
 @media(max-width:650px){.partner-logo-row{grid-template-columns:repeat(2,minmax(0,1fr))}.partner-logo{height:86px}body.techletter-page #partnerships .pub-grid{grid-template-columns:1fr}}
+
+/* Match the page gutters and keep the four collaboration formats compact. */
+body.techletter-page #partnerships>.section{padding:26px var(--page-gutter)}
+body.techletter-page #partnerships .section-label{padding-bottom:14px;margin-bottom:22px}
+body.techletter-page #partnerships h2{margin:0}
+body.techletter-page #partnerships .detail-body{margin-top:18px}
+body.techletter-page #partnerships .pub-grid{grid-template-columns:repeat(4,minmax(0,1fr));gap:14px;margin:20px 0}
+body.techletter-page #partnerships .content-card{min-width:0;min-height:170px;aspect-ratio:1.2;padding:20px;display:flex;flex-direction:column;justify-content:center}
+body.techletter-page #partnerships .content-card h3{font-size:18px;line-height:1.3;margin-bottom:10px}
+body.techletter-page #partnerships .content-card p{font-size:14px;line-height:1.55}
+body.techletter-page #partnerships .intro{margin:0 0 16px}
+@media(max-width:1000px){body.techletter-page #partnerships .pub-grid{grid-template-columns:repeat(2,minmax(0,1fr))}body.techletter-page #partnerships .content-card{aspect-ratio:auto;min-height:160px}}
+@media(max-width:520px){body.techletter-page #partnerships .pub-grid{grid-template-columns:1fr}body.techletter-page #partnerships .content-card{min-height:0;padding:18px}}
