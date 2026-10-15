@@ -241,3 +241,13 @@ header nav a{font-size:17px;line-height:1.35;padding-top:10px;padding-bottom:10p
 .keynote-topic-grid{grid-template-columns:repeat(2,minmax(0,1fr))}
 .source-unavailable{display:block;font-size:14px;line-height:1.6;color:#52617c;margin-top:16px}
 @media(max-width:800px){.keynote-topic-grid{grid-template-columns:1fr}.detail-page .section>h1.page-title{font-size:34px}}
+
+/* Contextual photography in page introductions. */
+.page-hero{display:grid;grid-template-columns:minmax(0,1.1fr) minmax(0,.9fr);gap:clamp(28px,4vw,64px);align-items:center;margin:0 0 30px}
+.page-hero-copy{min-width:0}.detail-page .page-hero h1.page-title{font-family:Manrope,sans-serif;font-size:clamp(32px,3.5vw,52px);font-weight:500;line-height:1.12;letter-spacing:-.055em;width:auto;max-width:none;margin:0 0 22px}
+.page-hero-copy .intro{font-size:18px;line-height:1.75;margin:0;max-width:68ch}
+.page-hero-photo{min-width:0;margin:0}.page-hero-photo img{display:block;width:100%;height:clamp(260px,27vw,380px);object-fit:cover;object-position:center;border-radius:16px;border:1px solid #22314920;box-shadow:10px 10px 0 #dbe8ee}
+.page-hero-photo figcaption{font-size:13px;line-height:1.5;color:#52617c;margin-top:17px}
+.speaking-page .section:first-child>.detail-body{display:flex;flex-wrap:wrap;gap:18px 28px;margin-top:22px}.speaking-page .section:first-child>.detail-body>.text-link{align-self:flex-start}
+.page-hero+.detail-body>.inline-links{margin-top:0}
+@media(max-width:850px){.page-hero{grid-template-columns:1fr;gap:26px}.detail-page .page-hero h1.page-title{font-size:clamp(30px,6vw,42px)}.page-hero-photo img{height:auto;aspect-ratio:4/3;max-height:380px}.page-hero-copy .intro{font-size:17px}.page-hero-photo{max-width:100%}}
