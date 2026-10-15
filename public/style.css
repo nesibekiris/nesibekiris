@@ -323,3 +323,7 @@ body.techletter-page #partnerships .sponsorship-intro-row{display:flex;align-ite
 body.techletter-page #partnerships .sponsorship-intro-row>.intro{flex:1;max-width:760px;margin:0}
 body.techletter-page #partnerships .sponsorship-intro-row>.text-link{flex-shrink:0;align-self:center;margin:0;font-size:14px}
 @media(max-width:850px){body.techletter-page #partnerships .sponsorship-intro-row{flex-direction:column;align-items:flex-start;gap:10px}body.techletter-page #partnerships .sponsorship-intro-row>.text-link{align-self:flex-start}}
+
+body.techletter-page #partnerships .sponsorship-intro-copy{flex:1;min-width:0;max-width:760px}
+body.techletter-page #partnerships .sponsorship-intro-copy>.intro{margin:0}
+body.techletter-page #partnerships .sponsorship-note{font-size:12px;line-height:1.55;color:#52617c;margin:8px 0 0;max-width:760px}
