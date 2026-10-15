@@ -4,5 +4,17 @@
   "buildCommand": "npm run build",
   "outputDirectory": "output",
   "installCommand": "echo \"No external dependencies\"",
-  "cleanUrls": false
+  "cleanUrls": false,
+  "redirects": [
+    {
+      "source": "/writing.html",
+      "destination": "/techletter.html#articles",
+      "permanent": true
+    },
+    {
+      "source": "/en/writing.html",
+      "destination": "/en/techletter.html#articles",
+      "permanent": true
+    }
+  ]
 }
