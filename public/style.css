@@ -340,3 +340,8 @@ body.techletter-page .combined-archive .pub-index{font-size:11px}
 body.techletter-page .techletter-reports .content-card{aspect-ratio:auto;min-height:230px}
 body.techletter-page .techletter-reports .content-card h3{overflow-wrap:anywhere}
 #articles,#reports,#partnerships{scroll-margin-top:90px}
+
+/* Contact is the primary navigation action. */
+body>header nav a[href="/contact.html"],body>header nav a[href="/en/contact.html"]{display:inline-flex;align-items:center;justify-content:center;padding:9px 16px;border-radius:24px;background:var(--blue);color:#fff;border:1px solid #5266a9;box-shadow:0 3px 0 #324573;line-height:1.4;font-weight:500;white-space:nowrap;transition:transform .2s,box-shadow .2s}
+body>header nav a[href="/contact.html"]:hover,body>header nav a[href="/en/contact.html"]:hover{color:#fff;transform:translateY(-2px);box-shadow:0 5px 0 #324573}
+body>header nav a[href="/contact.html"]:active,body>header nav a[href="/en/contact.html"]:active{transform:translateY(1px);box-shadow:0 1px 0 #324573}
