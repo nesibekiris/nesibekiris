@@ -10,5 +10,8 @@
  card.querySelector('.newsletter-dismiss').addEventListener('click',dismiss);
  card.querySelector('.newsletter-subscribe').addEventListener('click',dismiss);
  document.addEventListener('keydown',event=>{if(event.key==='Escape'&&!card.hidden)dismiss()});
- setTimeout(()=>{if(!dismissed)card.hidden=false},8000);
+ const reading=document.getElementById('reading');
+ if(reading&&'IntersectionObserver' in window){const observer=new IntersectionObserver(entries=>{
+  if(entries.some(entry=>entry.isIntersecting)){if(!dismissed)card.hidden=false;observer.disconnect()}
+ },{threshold:0.2});observer.observe(reading)}
 })();

@@ -235,3 +235,9 @@ header nav a{font-size:17px;line-height:1.35;padding-top:10px;padding-bottom:10p
 .workshop-tailored{margin-top:28px;padding:26px;border:1px solid #d2ddec;border-radius:13px;background:#fff}.workshop-tailored h3{font-size:26px}.workshop-tailored p{font-size:17px;line-height:1.7;max-width:800px}
 
 .speaking-format-grid{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:22px;margin-top:28px}.speaking-format-grid .content-card{display:flex;flex-direction:column;padding:26px;background:#edf3ff}.speaking-format-grid .content-card:nth-child(2){background:#eaf5f3}.speaking-format-grid .content-card:nth-child(3){background:#f0ebfa}.speaking-format-grid h3{font-size:27px}.speaking-format-grid p{font-size:17px;line-height:1.7}.speaking-format-grid .text-link{margin-top:auto;align-self:flex-start}.speaking-page .section:first-child .detail-body{display:flex;flex-wrap:wrap;gap:18px 28px}.speaking-page .section:first-child .detail-body .intro{flex-basis:100%;margin-bottom:8px}@media(max-width:1000px){.speaking-format-grid{grid-template-columns:1fr}}
+
+/* Audit fixes: semantic page titles and a balanced four-topic layout. */
+.detail-page .section>h1.page-title{font-family:Manrope,sans-serif;font-size:clamp(32px,3.5vw,52px);font-weight:500;line-height:1.12;letter-spacing:-.055em;margin:0;width:auto;max-width:1000px}
+.keynote-topic-grid{grid-template-columns:repeat(2,minmax(0,1fr))}
+.source-unavailable{display:block;font-size:14px;line-height:1.6;color:#52617c;margin-top:16px}
+@media(max-width:800px){.keynote-topic-grid{grid-template-columns:1fr}.detail-page .section>h1.page-title{font-size:34px}}
