@@ -251,3 +251,8 @@ header nav a{font-size:17px;line-height:1.35;padding-top:10px;padding-bottom:10p
 .speaking-page .section:first-child>.detail-body{display:flex;flex-wrap:wrap;gap:18px 28px;margin-top:22px}.speaking-page .section:first-child>.detail-body>.text-link{align-self:flex-start}
 .page-hero+.detail-body>.inline-links{margin-top:0}
 @media(max-width:850px){.page-hero{grid-template-columns:1fr;gap:26px}.detail-page .page-hero h1.page-title{font-size:clamp(30px,6vw,42px)}.page-hero-photo img{height:auto;aspect-ratio:4/3;max-height:380px}.page-hero-copy .intro{font-size:17px}.page-hero-photo{max-width:100%}}
+
+/* Keep the STRATRI route inside the same card language as the service offers. */
+.compact-home .stratri-route{padding:26px 28px;margin-top:28px;border:1px solid #b6cdd3;border-top:3px solid #267579;border-radius:16px;background:linear-gradient(115deg,#eef6f3,#f3f7fb);box-shadow:7px 7px 0 #b1c7d14d;gap:28px}
+.compact-home .stratri-route .small-label{color:#267579}.compact-home .stratri-route h3{margin:9px 0 10px}.compact-home .stratri-route p{margin:0;max-width:660px}.compact-home .stratri-route>.text-link{color:#184a5a;align-self:center}
+@media(max-width:800px){.compact-home .stratri-route{padding:22px;gap:18px;box-shadow:5px 5px 0 #b1c7d14d}.compact-home .stratri-route>.text-link{align-self:flex-start}}
