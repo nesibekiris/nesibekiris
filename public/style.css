@@ -362,3 +362,27 @@ body>header nav a[href="/contact.html"]:active,body>header nav a[href="/en/conta
 .compact-home .quick-offers .service-choice p{font-size:15px;line-height:1.55;margin:0 0 10px}
 .compact-home .quick-offers .session-format{font-size:12px;padding-top:4px;line-height:1.45}
 .compact-home .quick-offers .text-link{font-size:14px;margin-top:8px;padding-bottom:3px}
+
+/* Site-wide proportional scale for both languages. */
+:root{--section-space:32px;--card-padding:20px;--card-gap:14px;--card-title-size:22px;--card-copy-size:15px;--section-title-size:clamp(28px,3vw,40px)}
+body.detail-page main .section,body.compact-home main>.section{padding-top:var(--section-space);padding-bottom:var(--section-space)}
+body.detail-page main .section,body.compact-home main>.section{padding-left:var(--page-gutter);padding-right:var(--page-gutter)}
+body main .section-label{font-size:12px;line-height:1.5;padding-bottom:14px;margin-bottom:24px}
+body.detail-page main .section>h2,body.compact-home main .section>h2{font-size:var(--section-title-size);line-height:1.16;letter-spacing:-.045em}
+body.detail-page .page-hero h1.page-title,body.detail-page .section>h1.page-title{font-size:clamp(32px,3.5vw,48px);line-height:1.15}
+body.detail-page .page-hero-copy .intro{font-size:17px;line-height:1.65}
+body.detail-page main .detail-body{margin-top:22px}
+body.detail-page main .detail-body>.intro,body.detail-page main .section>.intro{font-size:16px;line-height:1.65}
+body.detail-page main :is(.publication.content-card,.publication.article-card,.personal-workshop-grid .personal-workshop,.speaking-format-grid .content-card,.scope-grid .content-card,.corporate-card-grid .content-card,.training-proof-grid .content-card),body.compact-home .quick-offers .service-choice{padding:var(--card-padding);min-width:0}
+body.detail-page main :is(.content-card,.article-card,.media-content,.project-content) h3,body.compact-home .quick-offers .service-choice h3{font-size:var(--card-title-size);line-height:1.25;letter-spacing:-.035em;margin:0 0 10px}
+body.detail-page main :is(.content-card,.article-card,.media-content,.project-content) p,body.compact-home .quick-offers .service-choice p{font-size:var(--card-copy-size);line-height:1.6;margin:0 0 12px}
+body.detail-page main :is(.media-content,.project-content){padding:var(--card-padding)}
+body.detail-page main :is(.pub-grid,.media-grid,.project-grid,.scope-grid,.corporate-card-grid,.training-proof-grid,.personal-workshop-grid,.speaking-format-grid,.keynote-topic-grid),body.compact-home .personal-service-grid.quick-offers{gap:var(--card-gap);align-items:stretch}
+body.detail-page main :is(.content-card,.article-card,.media-card,.project-card){height:100%}
+body.detail-page main :is(.content-card,.article-card,.media-content,.project-content) .text-link{font-size:14px;line-height:1.5}
+body.detail-page main .page-hero-photo img{height:clamp(260px,27vw,360px)}
+body.techletter-page #partnerships .content-card h3{font-size:25px}
+body.techletter-page .techletter-reports .content-card h3{font-size:20px}
+body.techletter-page .combined-archive .article-card h3{font-size:22px}
+@media(max-width:850px){:root{--section-space:28px;--card-padding:18px;--card-title-size:21px}body.detail-page main .page-hero-photo img{height:auto;aspect-ratio:4/3;max-height:360px}}
+@media(max-width:520px){:root{--section-space:25px;--card-gap:12px;--section-title-size:28px;--card-title-size:20px}body.detail-page .page-hero h1.page-title,body.detail-page .section>h1.page-title{font-size:32px}body main .section-label{margin-bottom:20px}body.techletter-page #partnerships .content-card h3{font-size:23px}}
